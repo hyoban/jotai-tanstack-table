@@ -15,8 +15,14 @@
     "moduleResolution": "Bundler",
     "module": "ESNext",
     "noEmit": true,
+
+    /* If your code runs in the DOM: */
+    "lib": ["es2022", "dom", "dom.iterable"],
+
     /* If your code doesn't run in the DOM: */
-    "lib": ["es2022"]
+    // "lib": ["es2022"],
+
+    "jsx": "preserve"
   },
   "include": ["src"]
 }
