@@ -7,7 +7,7 @@
 [![License][license-src]][license-href]
 [![code style: prettier][code-style-src]][code-style-href]
 
-Jotai integration library for TanStack Table
+[Jotai](https://github.com/pmndrs/jotai) integration library for [TanStack Table](https://github.com/TanStack/table)
 
 ## Install
 
