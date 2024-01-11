@@ -9,6 +9,29 @@
 
 Jotai integration library for TanStack Table
 
+## Install
+
+```sh
+ni jotai-tanstack-table jotai @tanstack/table-core
+```
+
+## Usage
+
+```tsx
+import { getCoreRowModel } from "@tanstack/react-table"
+import { atom, useAtomValue } from "jotai"
+import { atomWithTable } from "jotai-tanstack-table"
+
+const dataAtom = atom([...defaultData])
+const tableAtom = atomWithTable((get) => ({
+  data: get(dataAtom),
+  columns,
+  getCoreRowModel: getCoreRowModel(),
+}))
+
+const table = useAtomValue(tableAtom)
+```
+
 ## License
 
 [MIT](./LICENSE) License © 2023-PRESENT [Stephen Zhou](https://github.com/hyoban)
